@@ -1,7 +1,4 @@
 
-// SLIDER
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
+// SLIDER code
+
+// other code

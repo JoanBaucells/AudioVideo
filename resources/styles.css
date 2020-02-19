@@ -1,5 +1,7 @@
 * {
 	 box-sizing: border-box;
+	 margin: 0px;
+	 padding:0px;
 }
 
 body {
@@ -129,7 +131,7 @@ body {
 
 /* CONTENT */
 
-content{
+.content{
 	width: 1024;
 	height: 768;
 	background-color: white;

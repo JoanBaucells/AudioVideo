@@ -1,0 +1,136 @@
+* {
+	 box-sizing: border-box;
+}
+
+body {
+	 background: black;
+	 font-family: "Comfortaa", sans-serif;
+	 position: relative;
+}
+
+ h1 {
+	 position: relative;
+	 color: #fff;
+	 font: 900 60px Montserrat;
+	 text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* INTRO */
+
+ .intro-content {
+ 	 z-index: 100;
+	 text-align: center;
+	 text-transform: uppercase;
+	 position: relative;
+	 height: 100vh;
+	 overflow-y: scroll;
+	 animation-name: intro-animation3;
+	 animation-duration: 4s;
+	 animation-fill-mode: forwards;
+}
+
+ .intro {
+	 position: relative;
+	 padding: 5em;
+	 height: 100vh;
+	 overflow: hidden;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 letter-spacing: 2em;
+	 background-image: url("image/stadium.jpg");
+	 animation-name: intro-animation2;
+	 animation-duration: 1s;
+ 	 animation-timing-function: linear;
+}
+ .intro:before {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+	 opacity: 0;
+	 transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+ .intro h1 {
+	 display: inline-block;
+	 animation-name: intro-animation;
+	 animation-duration: 1s;
+ 	 animation-timing-function: linear;
+}
+
+@keyframes intro-animation {
+  0% {
+  	transform: scale(1);
+  }
+  25% {
+  	transform: scale(2);
+  }
+  50%{
+	transform: scale(3);
+  }
+  100%{
+	transform: scale(5);
+  }
+}
+
+@keyframes intro-animation2 {
+  0% {
+  	opacity: 0.7;
+  }
+  25% {
+  	opacity: 0.5;
+  }
+  50%{
+	opacity: 0.3;
+  }
+  100%{
+	opacity: 0.0;
+  }
+}
+
+@keyframes intro-animation3 {
+  0% {
+  }
+  25% {
+  }
+  50%{
+  }
+  80%{
+  	width: 0%;
+  	height: 0%;
+  	display: none;
+  }
+  100%{
+  	width: 0%;
+  	height: 0%;
+  }
+}
+
+/* SLIDER */
+
+.flexslider{
+	z-index: 0;
+}
+
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* CONTENT */
+
+content{
+	width: 1024;
+	height: 768;
+	background-color: white;
+}

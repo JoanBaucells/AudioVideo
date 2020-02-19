@@ -1,0 +1,30 @@
+[
+	{ 
+		"id" : "1",
+		"titol" : "",
+        "descripcio" : "",
+        "video" : "",
+        "imatge" : ""
+	},
+	{ 
+		"id" : "2",
+		"titol" : "",
+        "descripcio" : "",
+        "video" : "",
+        "imatge" : ""
+	},
+	{ 
+		"id" : "3",
+		"titol" : "",
+        "descripcio" : "",
+        "video" : "",
+        "imatge" : ""
+	},
+	{
+		"id" : "4",
+		"titol" : "",
+        "descripcio" : "",
+        "video" : "",
+        "imatge" : ""
+	}
+]

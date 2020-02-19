@@ -1,0 +1,22 @@
+[
+	{ 
+		"id" : "1",
+		"name" : "F.C.Barcelona",
+		"escut" : ""
+	},
+	{ 
+		"id" : "2",
+		"name" : "Real Madird",
+		"escut" : ""
+	},
+	{ 
+		"id" : "3",
+		"name" : "Atletic de Madird",
+		"escut" : ""
+	},
+	{
+		"id" : "4",
+		"name" : "R.C.D. Espanyol",
+		"escut" : ""
+	}
+]

@@ -117,8 +117,25 @@ body {
 	z-index: 0;
 }
 
+/* CONTENT */
+
+.content{
+	width: 1024px;
+	height: 768px;
+	background-color: transparent;
+}
+
+.slides{
+	text-align: center;
+	width: 512px;
+	margin: 0 auto;
+}
+
+.slides img{
+	width: 512px;
+}
+
 .flex-caption {
-  width: 96%;
   padding: 2%;
   left: 0;
   bottom: 0;
@@ -129,10 +146,15 @@ body {
   line-height: 18px;
 }
 
-/* CONTENT */
+/* HEADER */
 
-.content{
-	width: 1024;
-	height: 768;
-	background-color: white;
+.header{
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	background-color: transparent;
+}
+
+.header img{
+	width: 250px;
 }

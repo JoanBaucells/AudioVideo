@@ -5,6 +5,7 @@
 }
 
 body {
+	 padding: 5%;
 	 background: black;
 	 font-family: "Comfortaa", sans-serif;
 	 position: relative;
@@ -12,7 +13,7 @@ body {
 
  h1 {
 	 position: relative;
-	 color: #fff;
+	 color: white;
 	 font: 900 60px Montserrat;
 	 text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -20,7 +21,6 @@ body {
 /* INTRO */
 
  .intro-content {
- 	 z-index: 100;
 	 text-align: center;
 	 text-transform: uppercase;
 	 position: relative;
@@ -47,7 +47,7 @@ body {
 }
  .intro:before {
 	 content: "";
-	 position: absolute;
+	 position: relative;
 	 width: 100%;
 	 height: 100%;
 	 top: 0;
@@ -111,17 +111,42 @@ body {
   }
 }
 
+/* HEADER */
+
+.header{
+	text-align: center;
+	width: 100%;
+	background-color: transparent;
+}
+
+.mainnews img{
+	width: 250px;
+}
+
+.teams img{
+	height:50px;
+}
+
+.teams{
+	padding: 1%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	width: 100%;
+	border-top: 1px white solid;
+	border-bottom: 1px white solid;
+	border-color: white;
+	height: 64px;
+}
+
 /* SLIDER */
 
 .flexslider{
-	z-index: 0;
+	position: relative;
 }
 
 /* CONTENT */
 
 .content{
-	width: 1024px;
-	height: 768px;
 	background-color: transparent;
 }
 
@@ -132,7 +157,7 @@ body {
 }
 
 .slides img{
-	width: 512px;
+	width: 450px;
 }
 
 .flex-caption {
@@ -140,21 +165,23 @@ body {
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,.5);
-  color: #fff;
+  color: white;
   text-shadow: 0 -1px 0 rgba(0,0,0,.3);
   font-size: 14px;
   line-height: 18px;
 }
 
-/* HEADER */
-
-.header{
+.news{
 	text-align: center;
-	height: 100px;
-	width: 100%;
-	background-color: transparent;
 }
 
-.header img{
-	width: 250px;
+.news img{
+	width: 256px;
+}
+
+.new{
+	color: white;
+	width: 50%;
+	padding: 5%;
+	float: left;
 }

@@ -280,6 +280,10 @@ body {
 	background-color: white;
 	border-color: black;
 	border-width: 10px;
+	top: 0px;
+    left: 0px;
+    margin: 45;
+    margin-top: 170px;
 }
 
 .close{

@@ -1,8 +1,35 @@
 
+  // S L I D E R  C O D E
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+
+
 // O T H E R  C O D E
 
 window.onload = function(){
   
+
   var URLClubs = "resources/json/clubs.json";
   var URLNoticies = "resources/json/noticies.json";
 
@@ -44,7 +71,7 @@ window.onload = function(){
       
       divU.id = element.id;
       image.src = element.imatge;
-      
+      image.style.width = "100%";
       divD.textContent = element.titol;
       divD.classList.add("text");
       divU.classList.add("mySlides");
@@ -59,6 +86,7 @@ window.onload = function(){
       
       divU.appendChild(divD);
       divU.appendChild(image);
+      console.log(divU)
       document.querySelector(".slideshow-container").appendChild(divU);
       
 
@@ -91,34 +119,7 @@ window.onload = function(){
   }
 
 
-  // S L I D E R  C O D E
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+  
 
 
 }

@@ -4,11 +4,14 @@
 	 padding:0px;
 }
 
-body {
-	 padding: 5%;
+body {	 
 	 background: black;
 	 font-family: "Comfortaa", sans-serif;
 	 position: relative;
+}
+
+section{
+	padding: 5%;
 }
 
  h1 {

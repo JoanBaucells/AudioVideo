@@ -18,6 +18,7 @@ window.onload = function(){
 
       clubs.forEach(element => {
         var image = document.createElement("img");
+        image.id = element.id;
         image.src = element.escut;
         document.querySelector('.teams').appendChild(image);
       });
@@ -28,6 +29,7 @@ window.onload = function(){
 
   request2.responseType = 'json';
   request2.send();
+
 
   let noticies;
   request2.onload = function(){
@@ -41,13 +43,15 @@ window.onload = function(){
       var h2 = document.createElement("h2");
       var image = document.createElement("img");
       
+      li.id = element.id;
       image.src = element.imatge;
       h2.textContent = element.titol;
       h2.classList.add("flex-caption");
       li.addEventListener(
         'click',
         function(){
-
+          document.querySelector(".video").style.visibility = "visible";
+          document.querySelector(".close").style.visibility = "visible";          
         }
       )
 
@@ -60,8 +64,20 @@ window.onload = function(){
       var p = document.createElement("p");
 
       div.classList.add("new");
+      div.id = element.id;
       p.textContent = element.titol;
       imatge.src = element.imatge;
+
+      div.addEventListener(
+        'click',
+        function(e){
+          document.querySelector(".video").style.visibility = "visible";
+          document.querySelector(".close").style.visibility = "visible";
+          console.log();
+          document.querySelector(".video").src =  noticies[e.path[1].id -1].video;
+          console.log(noticies[e.path[1].id -1]);
+        }
+      )
 
       div.appendChild(imatge);
       div.appendChild(p);

@@ -1,0 +1,212 @@
+* {
+	 box-sizing: border-box;
+	 margin: 0px;
+	 padding:0px;
+}
+
+body {
+	 padding: 5%;
+	 background: black;
+	 font-family: "Comfortaa", sans-serif;
+	 position: relative;
+}
+
+ h1 {
+	 position: relative;
+	 color: white;
+	 font: 900 60px Montserrat;
+	 text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* INTRO */
+
+ .intro-content {
+	 text-align: center;
+	 text-transform: uppercase;
+	 position: relative;
+	 height: 100vh;
+	 overflow-y: scroll;
+	 animation-name: intro-animation3;
+	 animation-duration: 4s;
+	 animation-fill-mode: forwards;
+}
+
+ .intro {
+	 position: relative;
+	 padding: 5em;
+	 height: 100vh;
+	 overflow: hidden;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 letter-spacing: 2em;
+	 background-image: url("image/stadium.jpg");
+	 animation-name: intro-animation2;
+	 animation-duration: 1s;
+ 	 animation-timing-function: linear;
+}
+ .intro:before {
+	 content: "";
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 background: radial-gradient(rgba(0, 0, 0, 0.3), transparent);
+	 opacity: 0;
+	 transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+ .intro h1 {
+	 display: inline-block;
+	 animation-name: intro-animation;
+	 animation-duration: 1s;
+ 	 animation-timing-function: linear;
+}
+
+@keyframes intro-animation {
+  0% {
+  	transform: scale(1);
+  }
+  25% {
+  	transform: scale(2);
+  }
+  50%{
+	transform: scale(3);
+  }
+  100%{
+	transform: scale(5);
+  }
+}
+
+@keyframes intro-animation2 {
+  0% {
+  	opacity: 0.7;
+  }
+  25% {
+  	opacity: 0.5;
+  }
+  50%{
+	opacity: 0.3;
+  }
+  100%{
+	opacity: 0.0;
+  }
+}
+
+@keyframes intro-animation3 {
+  0% {
+  }
+  25% {
+  }
+  50%{
+  }
+  80%{
+  	width: 0%;
+  	height: 0%;
+  	display: none;
+  }
+  100%{
+  	width: 0%;
+  	height: 0%;
+  }
+}
+
+/* HEADER */
+
+.header{
+	text-align: center;
+	width: 100%;
+	background-color: transparent;
+}
+
+.mainnews img{
+	width: 250px;
+}
+
+.teams img{
+	height:50px;
+}
+
+.teams{
+	padding: 1%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	width: 100%;
+	border-top: 1px white solid;
+	border-bottom: 1px white solid;
+	border-color: white;
+	height: 64px;
+}
+
+/* SLIDER */
+
+.flexslider{
+	position: relative;
+}
+
+/* CONTENT */
+
+.content{
+	background-color: transparent;
+}
+
+.slides{
+	text-align: center;
+	width: 512px;
+	margin: 0 auto;
+}
+
+.slides img{
+	width: 450px;
+}
+
+.flex-caption {
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.news{
+	text-align: center;
+}
+
+.news img{
+	width: 256px;
+}
+
+.new{
+	color: white;
+	width: 50%;
+	padding: 5%;
+	float: left;
+}
+
+.video{
+	z-index: 10;
+	position: absolute;
+	margin-left: 10%;
+	margin-top: 15%;
+	width: 80%;
+	height: 60%;
+	background-color: white;
+	border-color: black;
+	border-width: 10px;
+	visibility: hidden;
+}
+
+.close{
+	cursor: pointer;
+	position: absolute;
+	width: 10px;
+	height: 5%;
+	top: 0%;
+	right: 0%;
+	padding: 12px 16px;
+	visibility: hidden;
+	size: 120%;
+}

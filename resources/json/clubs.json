@@ -2,21 +2,26 @@
 	{ 
 		"id" : "1",
 		"name" : "F.C.Barcelona",
-		"escut" : ""
+		"escut" : "resources/image/barca_logo.png"
 	},
 	{ 
 		"id" : "2",
 		"name" : "Real Madird",
-		"escut" : ""
+		"escut" : "resources/image/madrid_logo.png"
 	},
 	{ 
 		"id" : "3",
-		"name" : "Atletic de Madird",
-		"escut" : ""
+		"name" : "Atletic de Bilbao",
+		"escut" : "resources/image/bilbao_logo.png"
 	},
 	{
 		"id" : "4",
 		"name" : "R.C.D. Espanyol",
-		"escut" : ""
+		"escut" : "resources/image/espanyol_logo.png"
+	},
+	{
+		"id" : "5",
+		"name" : "Celta",
+		"escut" : "resources/image/celta_logo.png"
 	}
 ]

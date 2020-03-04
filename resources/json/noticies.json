@@ -4,27 +4,31 @@
 		"titol" : "Haaland",
         "descripcio" : "Haaland samalicum",
         "video" : "",
-        "imatge" : "resources/image/haaland.jpg"
+        "imatge" : "resources/image/haaland.jpg",
+		"idClub" : "1"
 	},
 	{ 
 		"id" : "2",
 		"titol" : "Stadium",
         "descripcio" : "Satium molt macu",
         "video" : "",
-        "imatge" : "resources/image/stadium.jpg"
+		"imatge" : "resources/image/stadium.jpg",
+		"idClub" : "2"
 	},
 	{ 
 		"id" : "3",
 		"titol" : "Thumbnail",
         "descripcio" : "Thumbnail jteskt",
         "video" : "",
-        "imatge" : "resources/image/haaland.jpg"
+        "imatge" : "resources/image/haaland.jpg",
+		"idClub" : "1"
 	},
 	{
 		"id" : "4",
 		"titol" : "Tettee",
         "descripcio" : "TEetetetetetetteteetetteet",
         "video" : "",
-        "imatge" : "resources/image/messi.jpg"
+        "imatge" : "resources/image/messi.jpg",
+		"idClub" : "2"
 	}
 ]

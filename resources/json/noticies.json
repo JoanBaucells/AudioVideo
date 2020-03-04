@@ -3,7 +3,7 @@
 		"id" : "1",
 		"titol" : "Haaland",
         "descripcio" : "Haaland samalicum",
-        "video" : "",
+        "video" : "resources/video/big_buck_bunny.mp4",
         "imatge" : "resources/image/haaland.jpg",
 		"idClub" : "1"
 	},
@@ -11,7 +11,7 @@
 		"id" : "2",
 		"titol" : "Stadium",
         "descripcio" : "Satium molt macu",
-        "video" : "",
+        "video" : "resources/video/big_buck_bunny.mp4",
 		"imatge" : "resources/image/stadium.jpg",
 		"idClub" : "2"
 	},
@@ -19,7 +19,7 @@
 		"id" : "3",
 		"titol" : "Thumbnail",
         "descripcio" : "Thumbnail jteskt",
-        "video" : "",
+        "video" : "resources/video/big_buck_bunny.mp4",
         "imatge" : "resources/image/haaland.jpg",
 		"idClub" : "1"
 	},
@@ -27,7 +27,7 @@
 		"id" : "4",
 		"titol" : "Tettee",
         "descripcio" : "TEetetetetetetteteetetteet",
-        "video" : "",
+        "video" : "resources/video/big_buck_bunny.mp4",
         "imatge" : "resources/image/messi.jpg",
 		"idClub" : "2"
 	}

@@ -29,8 +29,9 @@ window.onload = function(){
   request2.responseType = 'json';
   request2.send();
 
+  let noticies;
   request2.onload = function(){
-    var noticies = request2.response;
+    noticies = request2.response;
 
     var ul = document.createElement("ul");
     ul.classList.add("slides");
@@ -43,6 +44,13 @@ window.onload = function(){
       image.src = element.imatge;
       h2.textContent = element.titol;
       h2.classList.add("flex-caption");
+      li.addEventListener(
+        'click',
+        function(){
+
+        }
+      )
+
       li.appendChild(image);
       li.appendChild(h2);
       ul.appendChild(li);

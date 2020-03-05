@@ -261,6 +261,7 @@ body {
 
 .news{
 	text-align: center;
+	float: left;
 }
 
 .news img{
@@ -271,7 +272,6 @@ body {
 .new{
 	color: white;
 	width: 255px;
-	height: 144px;
 	padding: 5%;
 	float: left;
 }

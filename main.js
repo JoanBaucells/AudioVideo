@@ -98,10 +98,15 @@ window.onload = function(){
       divU.addEventListener(
         'click',
         function(e){
-          document.querySelector("video").classList.add("video");
-          document.querySelector("#close").classList.add("close");
+          if(!document.querySelector("#video").classList.contains("video")){
+            document.querySelector("#video").classList.add("video");
+          }
+          if(!document.querySelector("#close").classList.contains("close")){
+            document.querySelector("#close").classList.add("close");
+          }
           index = e.path[1].id.split("_");
-          document.querySelector("video").src =  noticies[index[0] -1].video;         
+          document.querySelector("video").src =  noticies[index[0] -1].video;       
+          document.querySelector("video").style.visibility = "visible";  
         }
       )
       
@@ -122,10 +127,15 @@ window.onload = function(){
       div.addEventListener(
         'click',
         function(e){
-          document.querySelector("video").classList.add("video");
-          document.querySelector("#close").classList.add("close");
+          if(!document.querySelector("#video").classList.contains("video")){
+            document.querySelector("#video").classList.add("video");
+          }
+          if(!document.querySelector("#close").classList.contains("close")){
+            document.querySelector("#close").classList.add("close");
+          }
           index = e.path[1].id.split("_");
-          document.querySelector(".video").src =  noticies[index[0] -1].video;
+          document.querySelector("video").src =  noticies[index[0] -1].video;
+          document.querySelector("video").style.visibility = "visible";
         }
       )
 
@@ -139,9 +149,10 @@ window.onload = function(){
   this.document.querySelector("#close").addEventListener(
     'click',
     function(e){
-      document.querySelector("video").classList.remove("video");
+      document.querySelector("#video").classList.remove("video");
       document.querySelector("#close").classList.remove("close");
       document.querySelector("video").src =  " ";
+      document.querySelector("video").style.visibility = "hidden";
     }
   )
 

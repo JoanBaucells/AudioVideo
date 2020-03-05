@@ -49,6 +49,22 @@ window.onload = function(){
         var image = document.createElement("img");
         image.id = element.id;
         image.src = element.escut;
+        image.addEventListener(
+          'click',
+          function(e){
+            document.querySelectorAll(".new").forEach(element => {
+              id = element.id.split("_");
+              if(id[1] != e.path[0].id){
+                element.style.visibility = "hidden";
+                element.style.position = "absolute";
+              }else{
+                element.style.visibility = "visible";
+                element.style.position = "";
+                }
+              
+            })
+          }
+        )
         document.querySelector('.teams').appendChild(image);
       });
   }
@@ -69,8 +85,7 @@ window.onload = function(){
       var divD = document.createElement("div");
       var image = document.createElement("img");
       
-      divU.id = element.id;
-      divU.idNotici = element.idClub;
+      divU.id = element.id + "_" + element.idClub;
       image.src = element.imatge;
       image.style.width = "100%";
       if (i == 0){
@@ -85,7 +100,8 @@ window.onload = function(){
         function(e){
           document.querySelector("video").classList.add("video");
           document.querySelector("#close").classList.add("close");
-          document.querySelector("video").src =  noticies[e.path[1].id -1].video;         
+          index = e.path[1].id.split("_");
+          document.querySelector("video").src =  noticies[index[0] -1].video;         
         }
       )
       
@@ -99,7 +115,7 @@ window.onload = function(){
       var p = document.createElement("p");
 
       div.classList.add("new");
-      div.id = element.id;
+      div.id = element.id + "_" + element.idClub;
       p.textContent = element.titol;
       imatge.src = element.imatge;
 
@@ -108,7 +124,8 @@ window.onload = function(){
         function(e){
           document.querySelector("video").classList.add("video");
           document.querySelector("#close").classList.add("close");
-          document.querySelector(".video").src =  noticies[e.path[1].id -1].video;
+          index = e.path[1].id.split("_");
+          document.querySelector(".video").src =  noticies[index[0] -1].video;
         }
       )
 

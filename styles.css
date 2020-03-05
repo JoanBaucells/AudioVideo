@@ -261,18 +261,18 @@ body {
 
 .news{
 	text-align: center;
-	float: left;
 }
 
 .news img{
-	width: 255px;
+	width: 256px;
 	height: 144px;
 }
 
 .new{
 	color: white;
 	width: 50%;
-	padding: 5%;	
+	padding: 5%;
+	float: left;
 }
 
 .video{

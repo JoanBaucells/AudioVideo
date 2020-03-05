@@ -1,28 +1,27 @@
+// S L I D E R  C O D E
 
-  // S L I D E R  C O D E
+var slideIndex = 1;
 
-  var slideIndex = 1;
-  showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n, ) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slides[slideIndex-1].style.display = "block";
-  }
+  slides[slideIndex-1].style.display = "block";
+}
+  
 
 
 // O T H E R  C O D E
@@ -61,10 +60,7 @@ window.onload = function(){
   request2.onload = function(){
     noticies = request2.response;
 
-    var ul = document.createElement("ul");
-    ul.classList.add("slides");
-
-    noticies.forEach(element => {
+    noticies.forEach((element, i) => {
       var divU = document.createElement("div");
       var divD = document.createElement("div");
       var image = document.createElement("img");
@@ -72,6 +68,9 @@ window.onload = function(){
       divU.id = element.id;
       image.src = element.imatge;
       image.style.width = "100%";
+      if (i == 0){
+        divU.style.display = "block";
+      }
       divD.textContent = element.titol;
       divD.classList.add("text");
       divU.classList.add("mySlides");
@@ -86,7 +85,6 @@ window.onload = function(){
       
       divU.appendChild(divD);
       divU.appendChild(image);
-      console.log(divU)
       document.querySelector(".slideshow-container").appendChild(divU);
       
 
@@ -103,10 +101,8 @@ window.onload = function(){
         'click',
         function(e){
           document.querySelector("video").classList.add("video");
-          document.querySelector("#close").classList.add("close");       
-          console.log();
+          document.querySelector("#close").classList.add("close");
           document.querySelector(".video").src =  noticies[e.path[1].id -1].video;
-          console.log(noticies[e.path[1].id -1]);
         }
       )
 
@@ -115,11 +111,7 @@ window.onload = function(){
 
       document.querySelector(".news").appendChild(div);
     })
-    document.querySelector(".flexslider").appendChild(ul);
   }
 
-
-  
-
-
 }
+

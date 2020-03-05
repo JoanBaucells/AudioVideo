@@ -215,7 +215,7 @@ body {
 
 .mySlides img{
 	width: 450px !important;
-	width: 253px !important;
+	height: 253px !important;
 }
 
 .active, .dot:hover {

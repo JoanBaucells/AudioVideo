@@ -1,34 +1,42 @@
 [
 	{ 
 		"id" : "1",
-		"titol" : "Haaland",
-        "descripcio" : "Haaland samalicum",
-        "video" : "resources/video/big_buck_bunny.mp4",
-        "imatge" : "resources/image/haaland.jpg",
+		"titol" : "GRIEZMANN POR NEYMAR!",
+        "descripcio" : "te parece bien este cambio?",
+        "video" : "resources/video/el-barca-veria-con-buenos-ojos-el-intercambio-de-griezmann-por-neymar.mp4",
+        "imatge" : "resources/image/neymar_griezmann.jpg",
 		"idClub" : "1"
 	},
 	{ 
 		"id" : "2",
-		"titol" : "Stadium",
-        "descripcio" : "Satium molt macu",
-        "video" : "resources/video/big_buck_bunny.mp4",
-		"imatge" : "resources/image/stadium.jpg",
+		"titol" : "MBAPPE: GUIÑO AL MADRID?",
+        "descripcio" : "crees que el madrid se harà con los servicios de Mbappe?",
+        "video" : "resources/video/la-reaccion-de-mbappe-al-ser-preguntado-por-el-real-madrid.mp4",
+		"imatge" : "resources/image/mbappe_madrid.jpg",
 		"idClub" : "2"
 	},
 	{ 
 		"id" : "3",
-		"titol" : "Thumbnail",
-        "descripcio" : "Thumbnail jteskt",
-        "video" : "resources/video/big_buck_bunny.mp4",
-        "imatge" : "resources/image/haaland.jpg",
+		"titol" : "GIRONA SE DEJA VALUOSOS PUNTOS PARA VOLVER A PRIMERA",
+        "descripcio" : "Aún tiene opciones para subir?",
+        "video" : "resources/video/resumen-de-cd-mirandes-vs-girona-fc-1-1.mp4",
+        "imatge" : "resources/image/girona-mirandes.jpg",
 		"idClub" : "1"
 	},
 	{
 		"id" : "4",
-		"titol" : "Tettee",
-        "descripcio" : "TEetetetetetetteteetetteet",
-        "video" : "resources/video/big_buck_bunny.mp4",
-        "imatge" : "resources/image/messi.jpg",
+		"titol" : "ESPAÑOL SACA UN PUNTO QUE PUEDE SIGNIFICAR LA SALVACION",
+        "descripcio" : "El español es un hueso duro de roer",
+        "video" : "resources/video/resumen-de-rcd-espanyol-vs-atletico-de-madrid-1-1.mp4",
+        "imatge" : "resources/image/español.jpg",
 		"idClub" : "2"
+	},
+	{
+		"id" : "5",
+		"titol" : "SE ACABAN LAS OPCIONES PARA EL MALLORCA",
+        "descripcio" : "Esta derrota deja al equipo muy tocado",
+        "video" : "resources/videoresumen-de-rcd-mallorca-vs-getafe-cf-0-1.mp4",
+        "imatge" : "resources/image/mallorca-getafe.jpg",
+		"idClub" : "3"
 	}
 ]

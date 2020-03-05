@@ -21,7 +21,7 @@
         "descripcio" : "Aún tiene opciones para subir?",
         "video" : "resources/video/resumen-de-cd-mirandes-vs-girona-fc-1-1.mp4",
         "imatge" : "resources/image/girona-mirandes.jpg",
-		"idClub" : "1"
+		"idClub" : "3"
 	},
 	{
 		"id" : "4",
@@ -29,7 +29,7 @@
         "descripcio" : "El español es un hueso duro de roer",
         "video" : "resources/video/resumen-de-rcd-espanyol-vs-atletico-de-madrid-1-1.mp4",
         "imatge" : "resources/image/español.jpg",
-		"idClub" : "2"
+		"idClub" : "4"
 	},
 	{
 		"id" : "5",
@@ -37,6 +37,6 @@
         "descripcio" : "Esta derrota deja al equipo muy tocado",
         "video" : "resources/videoresumen-de-rcd-mallorca-vs-getafe-cf-0-1.mp4",
         "imatge" : "resources/image/mallorca-getafe.jpg",
-		"idClub" : "3"
+		"idClub" : "5"
 	}
 ]

@@ -207,7 +207,14 @@ body {
 }
 
 .mySlides {
-	display: none
+	display: none;
+	text-align: center;
+	width: 512px;
+	margin: 0 auto;
+}
+
+.mySlides img{
+	width: 450px;
 }
 
 .active, .dot:hover {
@@ -238,15 +245,6 @@ body {
 	background-color: transparent;
 }
 
-.slides{
-	text-align: center;
-	width: 512px;
-	margin: 0 auto;
-}
-
-.slides img{
-	width: 450px;
-}
 
 .flex-caption {
   padding: 2%;

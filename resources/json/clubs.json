@@ -23,5 +23,15 @@
 		"id" : "5",
 		"name" : "Celta",
 		"escut" : "resources/image/celta_logo.png"
+	},
+	{
+		"id" : "5",
+		"name" : "Girona",
+		"escut" : "resources/image/girona_logo.png"
+	},
+	{
+		"id" : "5",
+		"name" : "Mallorca",
+		"escut" : "resources/image/mallorca_logo.png"
 	}
 ]

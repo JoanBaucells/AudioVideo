@@ -264,12 +264,14 @@ body {
 }
 
 .news img{
-	width: 256px;
+	width: 255px;
+	height: 144px;
 }
 
 .new{
 	color: white;
-	width: 50%;
+	width: 255px;
+	height: 144px;
 	padding: 5%;
 	float: left;
 }

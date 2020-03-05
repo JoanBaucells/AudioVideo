@@ -70,6 +70,7 @@ window.onload = function(){
       var image = document.createElement("img");
       
       divU.id = element.id;
+      divU.idNotici = element.idClub;
       image.src = element.imatge;
       image.style.width = "100%";
       if (i == 0){
@@ -81,10 +82,10 @@ window.onload = function(){
       divU.classList.add("fade");
       divU.addEventListener(
         'click',
-        function(){
+        function(e){
           document.querySelector("video").classList.add("video");
           document.querySelector("#close").classList.add("close");
-          document.querySelector(".video").src =  noticies[e.path[1].id -1].video;         
+          document.querySelector("video").src =  noticies[e.path[1].id -1].video;         
         }
       )
       

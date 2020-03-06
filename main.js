@@ -60,8 +60,7 @@ window.onload = function(){
               }else{
                 element.style.visibility = "visible";
                 element.style.position = "";
-                }
-              
+              }
             })
           }
         )

@@ -10,7 +10,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n, ) {
+function showSlides(n ) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -157,3 +157,11 @@ window.onload = function(){
 
 }
 
+window.onbeforeunload=function(){
+  state[0].time = video1.currentTime;
+  state[1].time = video2.currentTime;
+  state[0].play = !video1.paused;
+  state[1].play = !video2.paused;
+  localStorage.setItem('state', JSON.stringify(state));
+  localStorage.setItem('videoActiu', JSON.stringify(activeVideo));
+}

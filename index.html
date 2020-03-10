@@ -37,7 +37,14 @@
 				</div>
 			</div>
 			<div id="video" style="position: absolute;">
-				<video style="visibility: hidden;" src="" controls loop></video>
+				<div class="divInterior" style="visibility: hidden;">
+					<video style="visibility: hidden;" src="" loop></video>
+					<br><br>
+					<button style="visibility: hidden;" id="commutar"><span>&#x25BA;</span></button>
+					<button style="visibility: hidden;" id="parar"><span id="botoParar">&#x25A0;</span></button>
+					<progress style="visibility: hidden;" id="barraTimer" value="0" max="100"></progress> 
+					(<span style="visibility: hidden;" id="timer"></span>)
+				</div>
 			</div>
 		</section>
 		<span style="position: absolute;" id="close">&#10006;</span>	

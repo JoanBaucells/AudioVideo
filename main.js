@@ -106,6 +106,11 @@ window.onload = function(){
           index = e.path[1].id.split("_");
           document.querySelector("video").src =  noticies[index[0] -1].video;       
           document.querySelector("video").style.visibility = "visible";  
+          document.querySelector("#commutar").style.visibility = "visible";  
+          document.querySelector("#parar").style.visibility = "visible";  
+          document.querySelector("#barraTimer").style.visibility = "visible";  
+          document.querySelector("#timer").style.visibility = "visible";  
+          document.querySelector(".divInterior").style.visibility = "visible"; 
         }
       )
       
@@ -135,12 +140,16 @@ window.onload = function(){
           index = e.path[1].id.split("_");
           document.querySelector("video").src =  noticies[index[0] -1].video;
           document.querySelector("video").style.visibility = "visible";
+          document.querySelector("#commutar").style.visibility = "visible";  
+          document.querySelector("#parar").style.visibility = "visible";  
+          document.querySelector("#barraTimer").style.visibility = "visible";  
+          document.querySelector("#timer").style.visibility = "visible";  
+          document.querySelector(".divInterior").style.visibility = "visible"; 
         }
       )
 
       div.appendChild(imatge);
       div.appendChild(p);
-
       document.querySelector(".news").appendChild(div);
     })
   }
@@ -152,11 +161,53 @@ window.onload = function(){
       document.querySelector("#close").classList.remove("close");
       document.querySelector("video").src =  " ";
       document.querySelector("video").style.visibility = "hidden";
+      document.querySelector("#commutar").style.visibility = "hidden";  
+      document.querySelector("#parar").style.visibility = "hidden";  
+      document.querySelector("#barraTimer").style.visibility = "hidden";  
+      document.querySelector("#timer").style.visibility = "hidden"; 
+      document.querySelector(".divInterior").style.visibility = "hidden"; 
+      
 
-      if (localStorage.getItem('noticia'))
-        noticia=JSON.parse(localStorage.getItem('noticia'));
-      localStorage.setItem('noticia', JSON.stringify(noticia));
+      // if (localStorage.getItem('noticia'))
+      //   noticia=JSON.parse(localStorage.getItem('noticia'));
+      // localStorage.setItem('noticia', JSON.stringify(noticia));
     }
   )
+
+
+  var audio=document.querySelector('video');
+	
+		document.getElementById('commutar').addEventListener('click', function () {
+			if (audio.paused || audio.ended) { 
+				this.innerHTML = '&#x2590;&#x2590;'; // símbol pausa
+				audio.play();
+			} else {
+				this.innerHTML = '&#x25BA;'; // símbol play
+				audio.pause();
+			}
+		}, false);
+		document.getElementById('parar').addEventListener('click', function () {
+			audio.currentTime = 0;
+			document.getElementById('commutar').innerHTML = '&#x25BA;'; // símbol play
+			audio.pause();
+		}, false);
+		audio.addEventListener('timeupdate', posicionarAudio);
+		
+		document.getElementById('barraTimer').addEventListener('click', function (event) {
+			var durada=audio.duration;
+			var dimBarra=this.max;
+			var pos=event.offsetX/this.offsetWidth*dimBarra;
+	//		this.value=pos;
+			var posAudio=Math.ceil(pos*durada/dimBarra);
+			audio.currentTime=posAudio;
+		});
+	
+	function posicionarAudio() {
+		var durada=audio.duration;
+		var posicio=Math.ceil(audio.currentTime);
+		document.getElementById('timer').innerHTML = posicio + "seg. / " + Math.round(durada) + "seg." ;
+		var barra=document.getElementById('barraTimer');
+		if (durada>0) barra.value=Math.ceil(posicio/durada*(barra.max));
+	}
 
 }
